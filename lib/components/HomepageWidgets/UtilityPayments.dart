@@ -34,6 +34,7 @@ class UtilityPayments extends StatelessWidget {
             width: 370,
             child: GridView.builder(
               shrinkWrap: true,
+                  physics: NeverScrollableScrollPhysics(),
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: icondetails.length,
                   childAspectRatio: 1 / 3,

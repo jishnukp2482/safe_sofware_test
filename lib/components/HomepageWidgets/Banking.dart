@@ -22,10 +22,12 @@ class Banking extends StatelessWidget {
         children: [
           Container(
             height: 100,
-            width: 340,
-            child: GridView.builder(
+           width: 340,
+            child:
+             GridView.builder(
               // scrollDirection: Axis.horizontal,
               shrinkWrap: true,
+              physics: NeverScrollableScrollPhysics(),
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 3,
                   childAspectRatio: 1 / 3,

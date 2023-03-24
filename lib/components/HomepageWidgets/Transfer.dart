@@ -28,6 +28,7 @@ class Transfer extends StatelessWidget {
             width: 340,
             child: GridView.builder(
               shrinkWrap: true,
+                  physics: NeverScrollableScrollPhysics(),
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 3,
                   childAspectRatio: 1 / 3,
